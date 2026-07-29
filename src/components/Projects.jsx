@@ -1,7 +1,6 @@
 import useInView from "../hooks/useInView";
 import Todo from"../assets/images/todo.jpg";
 import Weather from"../assets/images/weather.jpg";
-import Portfolio from"../assets/images/portfolio.jpg";
 import Website from"../assets/images/website.jpg";
 import Timekeeping from"../assets/images/timekeeping.jpg";
 import Backend from"../assets/images/backend.jpg";
