@@ -2,40 +2,65 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  /* Theme color variables (dark/default) */
-  --color-primary: #6366f1; /* indigo-500 */
+  --color-primary: #4f46e5;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #06b6d4; /* teal-400 */
+  --color-secondary: #0ea5a4;
   --color-secondary-foreground: #000000;
-  --color-tertiary: #f59e0b; /* amber-500 */
+  --color-tertiary: #f59e0b;
   --color-tertiary-foreground: #000000;
-
-  /* Convenience text tokens */
   --text-primary: var(--color-primary-foreground);
   --text-secondary: var(--color-secondary-foreground);
+  --page-background: #ffffff;
+  --page-foreground: #111827;
+  --page-muted: #4b5563;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: light;
+  color: var(--page-foreground);
+  background-color: var(--page-background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  button {
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Ensure the navbar background uses the primary token and is fully opaque */
+html.dark {
+  --color-primary: #352c2c;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #000000;
+  --color-secondary-foreground: #ffffff;
+  --color-tertiary: #3ef50b;
+  --color-tertiary-foreground: #ffffff;
+  --text-primary: var(--color-primary-foreground);
+  --text-secondary: var(--color-secondary-foreground);
+  --page-background: #111827;
+  --page-foreground: #f9fafb;
+  --page-muted: #d1d5db;
+
+  color-scheme: dark;
+  color: var(--page-foreground);
+  background-color: var(--page-background);
+  button {
+    background-color: var(--color-primary);
+    color: var(--color-tertiary-foreground);
+  }
+}
+
 nav {
   background-color: var(--color-primary);
   background-clip: padding-box;
   opacity: 1;
 }
 
-/* Make navbar links use primary foreground and hover to tertiary reliably */
 nav a {
   color: var(--color-primary-foreground);
 }
@@ -43,7 +68,6 @@ nav a:hover {
   color: var(--color-tertiary);
 }
 
-/* Fallback mappings in case Tailwind utilities are not applied or overridden */
 .bg-primary { background-color: var(--color-primary) !important; }
 .text-primary-foreground { color: var(--color-primary-foreground) !important; }
 .bg-secondary { background-color: var(--color-secondary) !important; }
@@ -51,16 +75,15 @@ nav a:hover {
 .bg-tertiary { background-color: var(--color-tertiary) !important; }
 .text-tertiary { color: var(--color-tertiary) !important; }
 
-/* Make sure sections stretch full width when desired */
 section { width: 100%; }
 
 a {
   font-weight: 500;
-  color: #fdfdfd;
+  color: var(--page-foreground);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--color-primary);
 }
 
 body {
@@ -68,9 +91,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch; /* allow sections to span full width */
+  align-items: stretch;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--page-background);
+  color: var(--page-foreground);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 h1 {
@@ -95,30 +121,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    /* Light theme overrides */
-    --color-primary: #4f46e5; /* indigo-600 */
-    --color-primary-foreground: #ffffff;
-    --color-secondary: #0ea5a4; /* teal-500 */
-    --color-secondary-foreground: #000000;
-    --color-tertiary: #f59e0b; /* amber-500 */
-    --color-tertiary-foreground: #000000;
-
-    --text-primary: var(--color-primary-foreground);
-    --text-secondary: var(--color-secondary-foreground);
-
-    color: #111827;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 @tailwind base;

@@ -17,7 +17,7 @@ export default function Hero() {
       <p className="text-xl mb-6">
         A passionate Web developer with attention to detail. Learning how to build awesome websites.
       </p>
-      <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90">
+      <button className="px-6 py-3 rounded-lg hover:opacity-90">
         Contact Me 😁
       </button>
       </div>
