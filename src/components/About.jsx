@@ -11,11 +11,14 @@ export default function About() {
       <br></br>
       <h2 className="text-3xl font-bold mb-4 text-center">Skills</h2>
       <ul className="list-disc list-inside max-w-3xl mx-auto">
+        <li>Expert in PHP, Laravel, and CodeIgniter for backend development.</li>
+        <li>Expert in C# and Java programming languages. well-versed in object-oriented programming concepts and SOLID principles.</li>
         <li>Proficient in HTML, CSS, JavaScript, Bootstrap, jQuery, Tailwind, and React for front-end development.</li>
-        <li>Proficient in C# and Java programming languages. well-versed in object-oriented programming concepts and SOLID principles.</li>
-        <li>Experienced with backend technologies including Laravel, CodeIgniter, and LAMP Stack.</li>
-        <li>Familiar with database management using MySQL, Oracle, PostgreSQL, and Firebase.</li>
-        <li>Version control using Git and GitHub.</li>
+        <li>Experienced with backend technologies including Node.js, Python, and LAMP Stack.</li>
+        <li>Experienced with database management using MySQL, Oracle, PostgreSQL, and Firebase.</li>
+        <li>Version control using Git, Unity version control, and GitHub.</li>
+        <li>Multimedia Arts: Proficient in graphic design and video editing.</li>
+        <li>Proficient in using design tools such as Adobe Photoshop, Premiere Pro, Canva, Figma, and Capcut.</li>
         <li>Strong problem-solving skills and attention to detail.</li>
       </ul>
     </section>

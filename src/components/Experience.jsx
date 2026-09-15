@@ -17,13 +17,13 @@ export default function Experience() {
           <h2 className="text-3xl font-bold mb-6">Work Experience</h2>
           <h3 className="font-semibold">Junior Programmer</h3>
           <p>New Horizon Finance Corporation • 2024–Present</p>
-          <p>Worked with React, Laravel, LAMP Stack, git, MySQL, CodeIgniter, and Firebase. Developed the backend and frontend of our website using Laravel, Bootstrap, jQuery, and vanilla web development. Helped develop accounting of our web system using CodeIgniter and vanilla web development. Developed employee timekeeping website used by HR to track attendance of 100+ employees.</p>
+          <p>Worked with React, Laravel, LAMP Stack, git, MySQL, CodeIgniter, and Firebase. Developed and deployed the backend and frontend of our website using Laravel, Bootstrap, jQuery, and vanilla web development. Developed and deployed employee timekeeping website used by HR to track attendance of 100+ employees.  Helped maintain and update our web system using CodeIgniter.</p>
           <h3 className="font-semibold">IT intern</h3>
           <p>Knowles Training Institute • 2024–2024</p>
           <p>Mainly documenting and tech support. I used microsoft office applications to create reports and presentations. I handled making daily and weekly reports. I guided users through basic troubleshooting and software usage.</p>
-          <h3 className="font-semibold">Freelance Developer</h3>
+          <h3 className="font-semibold">Freelance Developer and Multimedia Artist</h3>
           <p>Self-employed • 2022–2024</p>
-          <p>Worked on various freelance projects, including website development and maintenance. Utilized React, Tailwind, and Laravel to create responsive and user-friendly websites. Collaborated with clients to understand their needs and deliver customized solutions.</p>
+          <p>Worked on various freelance projects during college, including website development and maintenance. Utilized React, Tailwind, and Laravel to create responsive and user-friendly websites. Collaborated with clients to understand their needs and deliver customized solutions.</p>
         </div>
       
     </section>
