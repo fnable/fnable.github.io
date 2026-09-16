@@ -81,7 +81,7 @@ export default function Projects() {
       {
         title: "Escape Route",
         description:
-          "A 3rd person multiplayer fire escape simulation game built in Unity. I was responsible for scripting the player movement, camera controls, in-game interactions, UI interactions, and implementing the multiplayer functionality using Photon Unity Networking (PUN).",
+          "A 3rd person multiplayer fire escape simulation game built in Unity. I was responsible for scripting the player movement, camera controls, in-game interactions, UI interactions, and implementing the multiplayer functionality using Photon Unity Networking (PUN). Using Firebase, I also implemented a leaderboard system to track and display player escape times.",
         image: UnityGame,
         alt: "Escape Route",
       },
